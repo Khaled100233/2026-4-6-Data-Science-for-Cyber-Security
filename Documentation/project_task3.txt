@@ -1,0 +1,35 @@
+
+1
+
+Automatic Zoom
+ School of Computing and Creative Technologies 
+Assessment Specification – Portfolio Task 3 
+Module Details 
+Module Code UFCE8B-30-3 
+Module Title Data Science for Cyber Security 
+Module Leader Ahsan Ikram 
+Module Tutors Ahsan Ikram, Andrew McCarthy 
+Year 2025-26 
+Task 03 
+Total number of assessments for this module 01 
+Weighting 20% 
+Date issued to students 16/02/2026 
+Task Specification 
+You are a cyber security analyst consulting for a private company. They have recently been under 
+various phishing attacks. You have quarantined a collection of sample files from prospective phishing 
+emails and links. You are planning to investigate the files further using Python and data science 
+related to malware analysis.  
+Sample Files: File1.task3, File 2.task3, File 3.task3, dataset_task3.csv and readme.txt (Available on 
+Blackboard.) 
+Files description: All the files are in the Windows Portable Executable (PE) format.  
+Deliverable: You are required to use Jupyter notebook to complete this task.  
+Analyse all the files to perform the following tasks, 
+Task Marks 1 Print all the Section headers. 2 2 Print all the imported libraries. 2 3 Print a summary of all the string features of length four or more characters. For 
+example, total count, average length, frequency etc. 4 4 Create a list of following suspicious imports ( ‘GetProcAddress’ 
+'CreateRemoteThread', ‘TerminateProcess’, 'VirtualAlloc', and 
+'WriteProcessMemory') and write a script to check if the calls exist in a sample file. If a file has more than 50% matches, it should be considered malicious.  4 5 Using the training data in the dataset_task3.csv file, 
+- Train and test a Decision Tree and Neural Network model.8 
+- Compare the accuracy of the two models. 
+Note: The readme.txt file contains brief descriptions of the features.  
+ Total 20 
+ 

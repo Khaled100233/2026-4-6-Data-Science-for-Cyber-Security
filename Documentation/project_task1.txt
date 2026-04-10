@@ -1,0 +1,75 @@
+
+1
+
+Automatic Zoom
+ School of Computing and Creative Technologies 
+ 
+Assessment Specification – Portfolio Task 1 
+ 
+Module Details 
+Module Code UFCE8B-30-3 
+Module Title Data Science for Cyber Security 
+Module Leader Ahsan Ikram 
+Module Tutors Ahsan Ikram, Andrew McCarthy 
+Year 2024-25 
+Task 01 
+Total number of assessments for this module 01 
+Weighting 20% 
+Date issued to students 24/10/2025 
+ 
+Task Specification 
+You are a cyber security analyst building a data analysis pipeline to train and test a packet classifier. 
+You have acquired a labelled network traffic dataset that has 47 network features for each packet 
+(such as, source ip, source port, protocol etc.). The features are described in a CSV file titled 
+‘features.csv’. The data has two class label columns as well; one that labels malicious packets with 
+the attack type out of nine possible options (namely, Fuzzers, Analysis, Backdoors, DoS, Exploits, 
+Generic, Reconnaissance, Shellcode and Worms. ) and another that labels the data as 
+benign/malicious. 
+ 
+Before you use the data from the dataset to train a machine learning model, you are planning to run 
+desrciptive an exploratory analysis focussed at cleaning the data. Further focus of data cleaning is on 
+identifying and fixing missing, incomplete and inaccurate data.  
+ 
+Dataset: task1.csv (Available on Blackboard.) 
+You must complete this portfolio task using Python programming language and Jupyter notebook. 
+Deliverable: Prepare a single Jupyter notebook. 
+Using the dataset provided you have to perform the following tasks, 
+ Task 
+ 
+Marks 
+1 Load the dataset, find out and print the total number of rows and columns in the 
+dataset. 
+ 
+2 
+2 Run exploratory analysis on the dataset and print a summary of missing values 
+across all columns. Fix the missing values using an interpolation method. 
+ 
+3 
+3 Investigate if the source and destination IP columns have any incomplete or 
+inaccurate IPs. Create a bar chart to show the number of errors, missing and correct 
+values.  
+ 
+6 
+4 ‘Stime’ and ‘Ltime’ shows two timestamps related to each row. Their description is in 
+the features.csv file. Using your knowledge of cyber security and network traffic 
+investigate if the two columns have missing or inaccurate values.  
+ 
+If you find any missing or inaccurate values. Provide a fix for those issues and print 
+the evidence on screen. 
+ 
+4 
+5 The dataset contains malicious traffic related to nine different attacks alongwith 
+benign traffic. Find the percentage of malicious and benign packets in the sample.  
+ 
+Hint: Malicious traffic data points are labelled with the ‘attack type’ in one of the 
+columns. 
+ 
+2 
+6 In order to evaluate the distribution/share of each attack type, visualise the number 
+of packets per attack type in an appropriate chart.  
+ 
+3 
+ Total 20 
+ 
+ 
+ 

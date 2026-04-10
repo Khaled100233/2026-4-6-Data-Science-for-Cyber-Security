@@ -1,0 +1,85 @@
+
+1
+
+Automatic Zoom
+ School of Computing and Creative Technologies 
+ 
+Assessment Specification – Portfolio Task 2 
+ 
+Module Details 
+Module Code UFCE8B-30-3 
+Module Title Data Science for Cyber Security 
+Module Leader Ahsan Ikram 
+Module Tutors Ahsan Ikram, Andrew McCarthy 
+Year 2025-26 
+Task 02 
+Total number of assessments for this module 01 
+Weighting 25% 
+Date issued to students 24/11/2025 
+ 
+Task Specification 
+You are a cyber security data analyst consulting law enforcement in trying to establish a timeline of 
+events and track the spread of misinformation based on various datasets to create an attacker profile 
+in the aftermath of an incident. One of the datasets you are analysing is a dump of social media 
+posts around the time of the incident. You have collected data from various sources that shows 
+content being shared on a social media platform around the incident. Some of the content appears to 
+be targetted misinformation campaigns. You want to perform further diagnostic analysis on the 
+datase.  
+ 
+Dataset: fake_news.csv (Available on Blackboard.) 
+Dataset description: The dataset provided is of a collection of fake and real news articles. The 
+dataset has 20 columns.  
+1. id 
+2. intext content 
+3. language 
+4. language of the article 
+5. crawled 
+6. crawled from where 
+7. site_url 
+8. site source 
+9. country 
+10. country name 
+11. domain_rank 
+12. thread_title 
+13. spam_score 
+14. main_img_url 
+15. replies_count 
+16. participants_count 
+17. likes 
+18. comments 
+19. shares 
+20. type 
+You must complete this portfolio task using Python programming language. 
+Deliverable: Prepare a single Jupyter notebook. You might need skipping bad lines 
+(on_bad_lines='skip') option added to the ‘read_csv’ function. 
+Using the assigned dataset you have to perform the following tasks, 
+ Task Marks 
+1 Prepare a correlation matrix for all numerical columns. Identify top three 
+strongest correlated columns pairs. Print a summary. 3 
+2 Apply linear regression to the correlated columns identified in (1). 
+Present the regression lines with clearly labelled visualisations. 6 
+3 Extract all the data labelled ‘conspiracy’, ‘hate’ and ‘satire’. The labels are 
+provided in the ‘type’ column.  
+Train an appropriate Naïve Bayes classifier using the data (80-20 train-test 
+split).  
+Test the accuracy of the trained model with five samples from each type 
+(conspiracy, hate and satire). 
+6 
+4 Using the ‘author’, ‘shares’, ‘type’ and ‘title’ columns, create a node link 
+graph, using the data for ‘hate’, ‘satire’ and ‘junksci’ type data items. The 
+graph should be created such that,  
+- ‘author’ and ‘title’ are nodes, titles connected to the authors. 
+- The shape/icon of the nodes should represent the ‘type’.   
+- The size/colour of the node represents the ‘shares’ value on a scale. 
+The scale should be calculated observing the minimum and maximum 
+shares. For example, 0-100, 100-500, 500-1000. 
+6 
+5 Using the ‘text’ column data for the rows labelled, ‘bias’ and ‘conspiracy’, 
+- Prepare the data by removing stopwords, applying tokenization and 
+lemmatization. 
+- Prepare word clouds for both the categories (‘bias’ and ‘conspiracy’). 
+4 
+ Total 25 
+ 
+ 
+ 

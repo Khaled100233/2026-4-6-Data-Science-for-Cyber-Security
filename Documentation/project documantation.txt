@@ -1,0 +1,326 @@
+ 
+ 
+School of Computing and Creative Technologies 
+Assessment Brief  
+Submission details 
+Module title: Data Science for Cyber Security  
+Module code: UFCE8B-30-3 
+Module Leader: Ahsan Ikram 
+Assessment title: Data Science Portfolio 
+Year: 2025-26 
+Assessment type: Portfolio 
+Assessment weighting: 100% of total module mark 
+Size or length of 
+assessment: 
+3000-words or equivalent 
+Module learning 
+outcomes assessed by 
+this task: 
+1.  To demonstrate understanding of programming for the purposes of data science in 
+cyber security  
+2.  To demonstrate practical skills of gathering, processing and analysing data to solve 
+cyber security challenges  
+3.  To reflect upon techniques and methods used and evaluate their performance 
+Use of AI in the 
+assessment: 
+Generative Artificial intelligence (Gen AI) tools can be used in an assistive role 
+You are permitted to use Gen AI tools in an assistive role in this assessment to support 
+you with   
+• drafting and structuring content (excluding software or coding content) 
+• supporting a particular process such as translating content 
+• providing ideas or inspiration to help you overcome a creative block. 
+Please note that while GenAI tools might suggest topics/content, you will always need to 
+go back and locate and critically engage with actual literature/research/evidence 
+yourself.  
+  
+As the use of Gen AI is optional (due to its purely supportive capacity) it’s use is not part 
+of the skills or knowledge you need to demonstrate for this assessment. However, if you 
+have used Gen AI to prepare or produce part or all your work, you must acknowledge its 
+use. For more advice on this (and its use in general) please see your Generative AI study 
+skills guide. 
+ 
+Guidance on 
+Referencing (inc AI): 
+Please note that the aim of referencing is to demonstrate you have read and understood 
+a range of sources to evidence your key points.  You need to list the references 
+consistently and in such a way as to ensure the reader can follow up on the sources for 
+themselves.  
+Referencing - Study skills | UWE Bristol  
+Using generative AI at UWE Bristol - Study skills | UWE Bristol 
+  
+Page 2 of 6 
+ 
+ 
+Submission and feedback dates 
+Submission deadline: Before 14:00 on 07/05/2026 
+Is eligible for 48-hour late submission window. 
+All times are 24-hour clock, current local time (at time of submission) in the UK. 
+ 
+Submission format: You are required to submit a zipped (compressed) file via Blackboard. The file should 
+include,  
+1. A completed coversheet. (The template for the coversheet will be provided) 
+2. A sub-folder for each portfolio task. (Each folder should contain all relevant 
+data and materials needed to run/validate the completed tasks). 
+3. A video file (or URL) demonstrating the working and execution of the 
+completed tasks.   
+Marks and Feedback 
+due on: 
+20 working days after the submission window date. 
+Marks and Feedback 
+will be provided via: 
+Blackboard. 
+  
+Page 3 of 6 
+ 
+Completing your assessment  
+Where am I required to do on this assessment? 
+This is an individual assignment. 
+The assignment requires you to complete a set of tasks (04), combined into a portfolio. The tasks will be aimed at 
+applying the data science principles and techniques covered in the module to cyber security related case-studies and 
+datasets.   
+ 
+The tasks are briefly described in the table below. More specific details and datasets for the tasks will be released in 
+the weeks indicated in the ‘Week released’ column.  
+ 
+Task Description Week released 
+01 
+Data Quality Pipeline Task: Using the given dataset, create a data quality 
+pipeline; the pipeline must include, data acquisition, data validation, data 
+cleaning and at least two analysis and visualisations. Optionally you can 
+consider transformations to add advanced phases. 
+To be released in Week 4. 
+02 
+Machine Learning Task: Comparatively analyse and select a machine learning 
+model to solve a cyber security case study, for example, phishing, bullying, 
+intrusion etc. 
+To be released in Week 8. 
+03 Threat/Anomaly Analysis Task: Create an experimental proof of concept for 
+applying data analytics to malware analysis.   
+To be released in Week 12. 
+04 
+Security Monitoring Dashboard: Select and apply data science metrics to a 
+cyber security case study and prepare a monitoring dashboard to show the real-
+time analysis.  
+To be released in Week 16. 
+ 
+Working on this assignment will help you to practice and exercise applied data science skills in a cyber security 
+context. 
+If you have questions about this assignment, please post them to the discussion board ‘Assessment Queries & 
+Answers’ on Blackboard. 
+ 
+Where should I start? 
+Focus on developing a clear understanding of key data science concepts and explore the cyber security domains 
+where the data science concepts can be applied.  
+ 
+What do I need to do to pass?  
+You need to show evidence that you have attempted and completed at least half of the portfolio tasks to a good 
+standard to pass the module.  
+ 
+How do I achieve high marks in this assessment?  
+Complete all the tasks included in the portfolio. Provide clear, well-structured and thoroughly documented and 
+tested codebase. Prepare the final portfolio report to a high standard as highlighted in the marking criteria.  
+ 
+How does the learning and teaching relate to the assessment?  
+In the first half of the module, we extensively worked on learning and applying core data science concepts. In the 
+second half we aimed to apply the data science concepts to cyber security problems/datasets.  
+ 
+What additional resources may help me complete this assessment? 
+FAQs and other resources on your Blackboard site 
+Specific UWE library study skills pages i.e.  
+o https://www.uwe.ac.uk/study/study-support/study-skills 
+o Critical thinking and writing - Reading and writing | UWE Bristol 
+o Writing - Reading and writing | UWE Bristol consider linking to specific assessment types from this link 
+o How to give a presentation 
+o Writing feedback - Writing | UWE Bristol 
+o Studiosity - Study support | UWE Bristol for quick feedback on your writing 
+ 
+What do I do if I am concerned about completing this assessment? 
+Page 4 of 6 
+ 
+It is recommended that you review all of the relevant materials on Blackboard. You can also speak to your module 
+leader for advice and guidance.   
+UWE Bristol offer a range of Assessment Support Options that you can explore through this link, and both Student 
+Support Advisers and Wellbeing Support are available. 
+For further information, please see the Student study essentials. 
+ 
+How do I avoid an Assessment Offence on this module?  
+Use the support above if you feel unable to submit your own work for this module.  
+Outline the most common forms of AOs for this type of assessment and brief guidance on how to avoid this.  
+Refer to academic-conduct-policy-and-academic-misconduct-procedures 
+ 
+ 
+Page 5 of 6 
+ 
+Marks and Feedback 
+Your assessment will be marked according to the following marking criteria. 
+You can use these to evaluate your own work before you submit. 
+ 
+The following marking criteria will be applied to the entire assessment. The ‘Accuracy & Completeness’ criteria will be further defined with the release of each portfolio task. 
+Percentage mark 86-100 70-85 60-69 50-59 40-49 0-40 
+Overall Descriptor Outstanding Excellent Very good Good Adequate Inadequate 
+Assessment criteria PASS 
+Accuracy & 
+Completeness 
+(80%) 
+ 
+ 
+20% per portfolio task. 
+Further marking 
+criteria discussed 
+within portfolio task 
+specifications. 
+All portfolio tasks 
+completed to a high 
+standard, results are 
+verified and validated. 
+Codebase is structured and 
+executable.  
+ 
+Performance and accuracy 
+metrics considered 
+throughout.  
+All portfolio tasks 
+attempted and mostly 
+completed; results are 
+mostly verified and 
+validated. Codebase is 
+structured and executable.  
+ 
+Performance and accuracy 
+metrics considered 
+partially. 
+Most of the portfolio 
+tasks attempted and 
+completed, results are 
+occasionally verified and 
+validated. Codebase is 
+partially structured and 
+executable.  
+ 
+Performance and 
+accuracy metrics are 
+sparsely considered. 
+At least half of the portfolio 
+tasks attempted and 
+completed, results are 
+rarely verified and 
+validated. Codebase is 
+rarely structured and 
+executable.  
+ 
+Performance and accuracy 
+metrics are not considered. 
+Less than half of the portfolio 
+tasks attempted and 
+completed, results are not 
+verified and validated. 
+Codebase is not structured 
+and executable.  
+ 
+Performance and accuracy 
+metrics are not considered. 
+Portfolio tasks 
+barely attempted; 
+results unclear, 
+codebase not 
+working. 
+Video demonstration 
+(15%) 
+ 
+Comprehensive video 
+demonstration with clear 
+and informative 
+commentary. The 
+demonstration covers all 
+tasks in context of working 
+and structure. The 
+demonstration shows 
+execution of the tasks 
+covering all possible 
+scenarios/use cases.  
+Thorough video 
+demonstration with clear 
+and informative 
+commentary. The 
+demonstration covers all 
+tasks in context of working 
+and structure. The 
+demonstration shows 
+execution of the tasks 
+covering most/required 
+scenarios/use cases.  
+Good video 
+demonstration with 
+relevant commentary. 
+The demonstration 
+covers most tasks in 
+context of working and 
+structure. The 
+demonstration shows 
+execution of the tasks in 
+at least one scenario/use 
+case. 
+Sufficiently well-presented 
+video demonstration with 
+some commentary. The 
+demonstration covers at 
+least 50% tasks in context 
+of working and structure. 
+The demonstration shows 
+execution some of the tasks 
+in at least one scenario/use 
+case. 
+Video demonstration lacks 
+quality and completeness. 
+The demonstration covers at 
+least 50% tasks in context of 
+working and structure. The 
+demonstration shows 
+execution some of the tasks 
+in at least one scenario/use 
+case. 
+Incomplete or 
+missing video 
+demonstration.  
+Presentation, 
+citations & references 
+(5%) 
+ 
+Exceptional style, standard 
+of writing & presentation; 
+may be publishable. All 
+sources correctly cited with 
+full details listed 
+Very well-written & 
+presented, negligible errors 
+in typography or style. All 
+sources correctly cited & 
+listed; errors in style or 
+detail only 
+Very well-written & 
+presented with only 
+minor errors in 
+typography or style. 
+Sources largely cited & 
+listed correctly; errors in 
+style or detail only 
+Reasonably well-written & 
+presented; scope to 
+improve style or proof-
+reading. Most sources cited 
+& listed; some details 
+missing/ incomplete 
+Layout very basic; readability 
+marred by errors in use of 
+English/ proof-reading. Some 
+citation of sources but some 
+source details missing/ 
+incomplete 
+Structure poor; no 
+real argument 
+discernible. 
+Layout poor; 
+grammatical, 
+spelling/ 
+punctuation errors 
+throughout
