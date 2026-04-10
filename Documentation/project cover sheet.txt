@@ -1,0 +1,40 @@
+
+1
+
+Automatic Zoom
+ 
+School of Computing and Creative Technologies 
+UFCE4B-30-3 Data Science for Cyber Security 
+Assessment Submission – Cover Sheet 
+ 
+Student Details 
+Student Number   
+Student Name  
+Submission Files 
+You should submit, 
+1. A cover sheet (this sheet). 
+2. A zipped folder that contains four sub-folders titled ‘Task 1’, ‘Task 2’, ‘Task 3’, and ‘Task 4’. Each 
+sub-folder should contain all the files related to the task.  
+Task Files submitted 
+Task-1 Folder 
+ 
+List the files here that you have submitted and if there are any 
+special instructions to run the file(s) please provide that as well. 
+ 
+Task-2 Folder 
+ 
+List the files here that you have submitted and if there are any 
+special instructions to run the file(s) please provide that as well. 
+ 
+Task-3 Folder 
+ 
+List the files here that you have submitted and if there are any 
+special instructions to run the file(s) please provide that as well. 
+ 
+Task-4 Folder 
+ 
+List the files here that you have submitted and if there are any 
+special instructions to run the file(s) please provide that as well. 
+ 
+Video demo  File or URL 
+ 

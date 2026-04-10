@@ -1,0 +1,88 @@
+
+1
+
+Automatic Zoom
+ School of Computing and Creative Technologies 
+ 
+Assessment Specification – Portfolio Task 4 
+Module Details 
+Module Code UFCE8B-30-3 
+Module Title Data Science for Cyber Security 
+Module Leader Ahsan Ikram 
+Module Tutors Ahsan Ikram, Andrew McCarthy 
+Year 2025-26 
+Task 04 
+Total number of assessments for this module 01 
+Weighting 20% 
+Date issued to students 16/02/2026 
+Task Specification 
+You are a cyber security analyst consulting for a financial organisation.  
+Their recent risk assessment suggests a higher than usual threat of a malware attack. They have decided to 
+be proactive and improve their defences.  
+One of the areas they are focussing on is the development of a real-time visualisation dashbaord. In the first 
+prototype of the data visualisation dashboard, they aim to monitor,  
+1)  Network Traffic (throughput, protocol, source etc.) 
+2)  Endpoints (current issues, Operating System (OS) version, firewall status etc.) 
+3)  Data backups (backup coverage, backup encryption, backup validation etc.)  
+4)  Staff readiness and awareness of cyber threats (pending training, job role risk profile, current risk 
+profile etc.)   
+Your task is to advise the local government on what data should be collected and based on that, next, 
+preparation of the dashboard. A breakdown of tasks and marks is shown below.  
+ 
+Sample Files: No files were given for this task.  
+Deliverable: You are required to submit, 
+1. A document that contains your suggestions on the details of the data that should be collected. 
+The table below provides some examples.  
+Category Sub-
+category 
+Metric / 
+Format 
+Frequency Collection 
+Mode 
+Collection 
+Mechanism 
+Recorded 
+at 
+Storage 
+Network Protocol Text Real-time Automated Network tap Gateway 
+router 
+CSV file 
+Endpoint Staff PC Text 10 min Automated SNMP trap Host 
+machines 
+CSV file 
+Staff 
+readiness 
+Current 
+Profile 
+3-scale 
+(low-
+medium-
+high) 
+3 months Manual HR records HR system Excel file 
+ 
+2. A cyber security dashboard protoype (created in Python).  
+a. You don’t have to collect or use actual data for this task. You can generate a small set (5-10 
+rows) of dummy data.    
+b.  The dashboard should use at least two inputs. For example, one CSV (Comma Separated-
+Values) or text or excel file or a database table for network traffic, one CSV/text/Excel file for 
+endpoint data. 
+c. Focus on the usability and user experience aspects of the dashboard; in terms of the 
+selection of the layout, selection of graphs, placement of important information, selection 
+of fonts/colors/separators etc. 
+Marking criteria: 
+ Task Marks 
+1 Three identified data metrics each, for network traffic monitoring, 
+endpoints monitoring, data backups monitoring and staff readiness 
+monitoring.  
+4 
+2 Prototype dashboard using at least two input files and six charts. 8 
+3 At least one geo-spatial visualisation (included in the six charts in 
+part-2).  2 
+4 At least one interactive visualisation (included in the six charts in 
+part-2). Choose an appropriate interaction, for example, data filter, 
+layout change, auto-refresh etc. 
+2 
+5 Effective layout and design of the dashboard. 4 
+ Total 20 
+ 
+ 
