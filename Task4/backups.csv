@@ -1,0 +1,11 @@
+backup_id,system_name,backup_date,coverage_pct,encryption_status,validation_result,backup_type,location,rto_compliant,size_gb
+BK-2000,Core Banking System,2026-05-01 02:00:00,95.3,Encrypted,Fail,Incremental,Off-site,Yes,245.3
+BK-2001,Customer Database,2026-04-30 20:00:00,77.0,Unencrypted,Pass,Full,Off-site,Yes,404.7
+BK-2002,Email Server,2026-04-30 14:00:00,59.5,Unencrypted,Fail,Incremental,Off-site,No,208.5
+BK-2003,Payment Gateway,2026-04-30 08:00:00,93.2,Encrypted,Pass,Full,Off-site,No,365.5
+BK-2004,HR System,2026-04-30 02:00:00,90.0,Unencrypted,Fail,Full,Off-site,No,95.8
+BK-2005,Compliance Archive,2026-04-29 20:00:00,73.1,Encrypted,Pass,Incremental,Off-site,No,53.5
+BK-2006,Trading Platform,2026-04-29 14:00:00,82.6,Encrypted,Fail,Full,On-site,Yes,206.2
+BK-2007,Audit Log Server,2026-04-29 08:00:00,74.1,Encrypted,Pass,Full,Off-site,No,6.1
+BK-2008,CRM System,2026-04-29 02:00:00,69.5,Unencrypted,Pass,Incremental,Off-site,No,349.8
+BK-2009,File Server,2026-04-28 20:00:00,86.5,Unencrypted,Pass,Full,On-site,Yes,151.9

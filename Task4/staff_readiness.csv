@@ -1,0 +1,11 @@
+employee_id,department,job_role,risk_profile,pending_trainings,training_completion_pct,days_since_training,last_phishing_result,phishing_click_rate_pct
+EMP-3000,Finance,Analyst,High,5,97.5,81,Pass,3.4
+EMP-3001,IT,Director,High,0,66.7,131,Pass,4.8
+EMP-3002,Operations,Developer,High,3,34.9,31,Fail,56.5
+EMP-3003,HR,Manager,High,3,65.6,169,Pass,35.0
+EMP-3004,Compliance,Officer,Medium,1,61.8,68,Fail,23.7
+EMP-3005,Risk,Manager,Medium,0,73.7,118,Pass,37.3
+EMP-3006,Trading,Developer,Low,4,65.0,68,Fail,7.9
+EMP-3007,Legal,Officer,Low,2,47.9,41,Pass,26.3
+EMP-3008,Customer Services,Analyst,Medium,5,63.5,142,Pass,18.0
+EMP-3009,Executive,Manager,Low,5,73.1,142,Pass,9.3

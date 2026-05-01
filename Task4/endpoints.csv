@@ -1,0 +1,11 @@
+endpoint_id,hostname,os_version,firewall_status,antivirus_status,patch_level,login_attempts_24h,disk_encryption,active_issues,location_city
+EP-1000,FINPC-10,Windows 10 21H2,Active,Updated,98.7,16,Enabled,6,London
+EP-1001,FINPC-11,macOS 14 Sonoma,Active,Updated,92.9,6,Enabled,4,Manchester
+EP-1002,FINPC-12,macOS 14 Sonoma,Active,Updated,79.3,0,Enabled,6,Birmingham
+EP-1003,FINPC-13,Windows Server 2019,Active,Updated,96.8,7,Enabled,6,Edinburgh
+EP-1004,FINPC-14,Windows Server 2022,Active,Missing,97.6,15,Enabled,0,Bristol
+EP-1005,FINPC-15,Windows Server 2022,Active,Missing,89.5,15,Enabled,1,Leeds
+EP-1006,FINPC-16,macOS 14 Sonoma,Active,Missing,74.0,24,Enabled,1,Liverpool
+EP-1007,FINPC-17,Windows Server 2019,Active,Outdated,99.8,14,Disabled,5,Cardiff
+EP-1008,FINPC-18,macOS 14 Sonoma,Inactive,Updated,57.9,17,Enabled,0,Sheffield
+EP-1009,FINPC-19,Windows 11 22H2,Active,Updated,58.2,7,Enabled,5,Glasgow
