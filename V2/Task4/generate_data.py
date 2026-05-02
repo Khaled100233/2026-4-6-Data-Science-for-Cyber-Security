@@ -2,7 +2,7 @@
 generate_data.py
 ================
 Generates realistic dummy CSV data files for the Financial Organisation
-Cyber Security Dashboard (Task 4 — V2).
+Cyber Security Dashboard (Task 4).
 
 Produces four CSV files in the same directory as this script:
   - network_traffic.csv
@@ -12,7 +12,7 @@ Produces four CSV files in the same directory as this script:
 
 Run this script once before launching dashboard.py to populate the data files.
 Usage:
-    cd V2/Task4 && python generate_data.py
+    cd Task4 && python generate_data.py
 """
 
 import os

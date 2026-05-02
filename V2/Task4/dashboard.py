@@ -1,14 +1,14 @@
 """
 dashboard.py
 ============
-Financial Organisation — Cyber Security Monitoring Dashboard V2
-Task 4 V2 | Data Science for Cyber Security
+Financial Organisation — Cyber Security Monitoring Dashboard
+Task 4 | Data Science for Cyber Security
 
-Rebuilt using Streamlit with a sidebar navigation model, 4 full-screen
-domain pages, and distinct chart types from the original Dash implementation.
+Built using Streamlit with a sidebar navigation model and 4 full-screen
+domain pages.
 
 Usage:
-    cd V2/Task4 && streamlit run dashboard.py
+    cd Task4 && streamlit run dashboard.py
     Then open: http://localhost:8501
 """
 
@@ -36,7 +36,7 @@ except ImportError:
 # Page configuration — must be the first Streamlit call
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="CyberSec Monitor v2",
+    page_title="CyberSec Monitor",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -47,7 +47,7 @@ st.set_page_config(
 # ─────────────────────────────────────────────────────────────────────────────
 # Data directory — check script-local folder first (self-contained), then Task4/
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = _SCRIPT_DIR   # V2/Task4 ships its own CSVs via generate_data.py
+DATA_DIR = _SCRIPT_DIR   # Task4 ships its own CSVs via generate_data.py
 if not os.path.isfile(os.path.join(DATA_DIR, "network_traffic.csv")):
     # Fallback: original Task4/ folder two levels up (legacy path)
     for candidate in [

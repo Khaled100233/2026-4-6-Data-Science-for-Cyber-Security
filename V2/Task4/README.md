@@ -1,4 +1,4 @@
-# CyberSec Dashboard V2 — Streamlit
+# CyberSec Dashboard — Streamlit
 
 A Streamlit-based real-time cyber security monitoring dashboard for a financial organisation.
 
@@ -23,7 +23,7 @@ A Streamlit-based real-time cyber security monitoring dashboard for a financial 
 
 ## Data Files
 
-The dashboard reads from the `Task4/` folder (workspace root):
+The dashboard reads from the `Task4/` folder:
 
 - `network_traffic.csv`
 - `endpoints.csv`
@@ -34,13 +34,13 @@ The dashboard reads from the `Task4/` folder (workspace root):
 
 ```bash
 # Install dependencies
-pip install -r requirements_v2.txt
+pip install -r requirements.txt
 ```
 
 ## Run
 
 ```bash
-cd V2/Task4 && streamlit run dashboard.py
+cd Task4 && streamlit run dashboard.py
 ```
 
 Then open **http://localhost:8501** in your browser.
