@@ -409,94 +409,122 @@ def page_backups(df: pd.DataFrame):
 
 def page_staff(df: pd.DataFrame):
     """
-    Render the Staff Security Readiness page.
+    Render the Staff Readiness & Awareness page.
 
     Charts:
-        - Sunburst: department → risk_profile → job_role
-        - Bubble chart: days_since_training vs completion_pct
-        - Streamlit slider to filter by days_since_training
+        - Sunburst: department → risk_profile → job_role (equal weight per employee)
+        - Bubble chart: days_since_training vs training_completion_pct
+          (size = pending_trainings, colour = risk_profile)
+        - Interactive single-value slider to filter by max days_since_training
     """
-    st.title("👥 Staff Security Readiness")
+    st.title("👥 Staff Readiness & Awareness")
 
-    # ── KPI strip ────────────────────────────────────────────────────────────
+    # ── KPI strip (4 columns) ─────────────────────────────────────────────────
     total_staff = len(df)
     high_risk   = int((df["risk_profile"] == "High").sum()) if "risk_profile" in df.columns else 0
-    avg_days    = round(df["days_since_training"].mean(), 1) if "days_since_training" in df.columns else 0
     avg_comp    = round(df["training_completion_pct"].mean(), 1) if "training_completion_pct" in df.columns else 0
+    # Phishing fail rate: percentage of staff who failed the last simulation
+    if "last_phishing_result" in df.columns and len(df) > 0:
+        phishing_fail_rate = round(
+            (df["last_phishing_result"] == "Fail").sum() / len(df) * 100, 1
+        )
+    else:
+        phishing_fail_rate = 0.0
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Total Staff", total_staff)
-    c2.metric("High Risk Employees", high_risk)
-    c3.metric("Avg Days Since Training", avg_days)
-    c4.metric("Avg Completion (%)", avg_comp)
+    # Show a red delta arrow when any high-risk employees are present
+    c2.metric(
+        "High Risk Count",
+        high_risk,
+        delta=f"+{high_risk}" if high_risk > 0 else None,
+        delta_color="inverse",   # 'inverse' makes positive delta red
+    )
+    c3.metric("Avg Training Completion (%)", avg_comp)
+    c4.metric("Phishing Fail Rate (%)", phishing_fail_rate)
 
     st.divider()
 
-    # ── Slider: filter by days_since_training ─────────────────────────────────
+    # ── Slider: filter by maximum days since last training ────────────────────
     if "days_since_training" in df.columns:
-        max_days = int(df["days_since_training"].max())
-        min_days = int(df["days_since_training"].min())
-        day_range = st.slider(
-            "Filter by Days Since Last Training",
-            min_value=min_days,
-            max_value=max_days,
-            value=(min_days, max_days),
+        max_slider = st.slider(
+            "Filter: Max days since last training",
+            min_value=1,
+            max_value=180,
+            value=180,
+            step=1,
             key="days_slider",
         )
-        filtered = df[
-            (df["days_since_training"] >= day_range[0]) &
-            (df["days_since_training"] <= day_range[1])
-        ]
-        st.caption(f"Showing {len(filtered)}/{total_staff} staff members.")
+        # Keep only staff whose training is within the selected window
+        filtered_df = df[df["days_since_training"] <= max_slider]
+        st.caption(f"Showing {len(filtered_df)} of {len(df)} staff members")
     else:
-        filtered = df
+        filtered_df = df
 
-    # ── Sunburst: department → risk_profile → job_role ────────────────────────
-    sunburst_cols = [c for c in ["department", "risk_profile", "job_role"] if c in filtered.columns]
+    # ── Chart 1: Sunburst — department → risk_profile → job_role ─────────────
+    sunburst_cols = [c for c in ["department", "risk_profile", "job_role"]
+                     if c in filtered_df.columns]
     if len(sunburst_cols) >= 2:
+        # Add a synthetic 'count' column so every employee has equal weight
+        sun_df = filtered_df.copy()
+        sun_df["count"] = 1
         fig_sun = px.sunburst(
-            filtered,
+            sun_df,
             path=sunburst_cols,
-            title="Staff Hierarchy: Department → Risk Profile → Job Role",
+            values="count",
             color="risk_profile" if "risk_profile" in sunburst_cols else sunburst_cols[0],
-            color_discrete_map={"Low": C_GREEN, "Medium": C_AMBER, "High": C_RED},
+            color_discrete_map={"Low": "#2ecc71", "Medium": "#f39c12", "High": "#e74c3c"},
+            title="Staff Risk Hierarchy: Department → Risk Profile → Job Role",
             template="plotly_dark",
+            height=500,
         )
-        fig_sun.update_layout(height=500)
         st.plotly_chart(fig_sun, use_container_width=True)
 
-    # ── Bubble chart: days_since_training vs completion_pct ───────────────────
+    # ── Chart 2: Bubble chart — days_since_training vs training_completion_pct ─
     bubble_needed = ["days_since_training", "training_completion_pct",
                      "pending_trainings", "risk_profile"]
-    if all(c in filtered.columns for c in bubble_needed):
-        # Ensure zero pending_trainings still shows as a visible point
-        bubble_df = filtered.copy()
-        bubble_df["bubble_size"] = bubble_df["pending_trainings"].clip(lower=1)
+    if all(c in filtered_df.columns for c in bubble_needed):
+        # Clip pending_trainings so zero values still render as visible points
+        bubble_df = filtered_df.copy()
+        bubble_df["pending_trainings"] = bubble_df["pending_trainings"].clip(lower=1)
+
+        # Build hover_data list from whichever optional columns are present
+        hover_cols = [c for c in ["employee_id", "department", "job_role",
+                                   "last_phishing_result"]
+                      if c in bubble_df.columns]
+
         fig_bubble = px.scatter(
             bubble_df,
             x="days_since_training",
             y="training_completion_pct",
-            size="bubble_size",
+            size="pending_trainings",
             color="risk_profile",
-            color_discrete_map=RISK_COLOURS,
-            hover_data=["department", "job_role"] if "department" in filtered.columns else None,
-            title="Staff Readiness Bubble Chart: "
-                  "Days Since Training vs Completion % (size = pending trainings)",
+            color_discrete_map={"Low": "#2ecc71", "Medium": "#f39c12", "High": "#e74c3c"},
+            hover_data=hover_cols if hover_cols else None,
+            size_max=40,
+            title="Training Compliance vs Risk Profile",
             labels={
                 "days_since_training": "Days Since Last Training",
                 "training_completion_pct": "Training Completion (%)",
-                "risk_profile": "Risk Profile",
-                "pending_trainings": "Pending Trainings",
             },
             template="plotly_dark",
+            height=450,
         )
-        fig_bubble.update_layout(height=480, legend_title="Risk Profile")
+        # Add a vertical dashed red warning line at 90 days
+        fig_bubble.add_vline(
+            x=90,
+            line_dash="dash",
+            line_color="red",
+            annotation_text="90-day warning",
+            annotation_position="top right",
+        )
+        fig_bubble.update_layout(legend_title="Risk Profile")
         st.plotly_chart(fig_bubble, use_container_width=True)
 
     # ── Download button ───────────────────────────────────────────────────────
     st.download_button(
         "⬇ Download Staff Data (CSV)",
-        data=filtered.to_csv(index=False),
+        data=filtered_df.to_csv(index=False),
         file_name="staff_readiness_export.csv",
         mime="text/csv",
     )
