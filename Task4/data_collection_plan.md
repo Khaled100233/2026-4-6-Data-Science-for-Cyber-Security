@@ -59,3 +59,19 @@ In the context of ransomware — the dominant malware threat to financial organi
 
 ### Staff Readiness
 Human error remains the most common root cause of successful malware incidents, particularly through phishing and social engineering. Financial organisations are explicitly targeted with spear-phishing campaigns because employees have access to payment systems, SWIFT terminals, and customer data. `pending_trainings` and `training_completion_pct` identify staff who have not completed mandatory security awareness training — a regulatory requirement under DORA and ISO 27001. `days_since_training` flags employees whose awareness may have degraded over time. `last_phishing_result` and `phishing_click_rate_pct` provide empirical, behavioural evidence of susceptibility rather than relying solely on training attendance. `risk_profile` combines job role (e.g., Finance Director, System Administrator) with behavioural data to produce a prioritised risk score, enabling security teams to focus remediation effort on the highest-risk individuals before an incident occurs.
+
+
+---
+
+## References
+
+- [Moustafa & Slay, 2015] Moustafa, N. & Slay, J. (2015). UNSW-NB15: A Comprehensive Data Set for Network Intrusion Detection Systems. *Military Communications and Information Systems Conference (MilCIS)*, 1–6. https://doi.org/10.1109/MilCIS.2015.7348942
+- [Vielberth et al., 2020] Vielberth, M., Böhm, F., Fichtinger, I. & Pernul, G. (2020). Security Information and Event Management (SIEM): A Survey and Open Research Issues. *IEEE Access*, 8, 143812–143836. https://doi.org/10.1109/ACCESS.2020.3012196
+- [ISO 27001, 2022] International Organisation for Standardisation. (2022). *ISO/IEC 27001:2022 — Information Security, Cybersecurity and Privacy Protection*. https://www.iso.org/standard/82875.html
+- [PCI-DSS, 2022] PCI Security Standards Council. (2022). *PCI DSS v4.0: Payment Card Industry Data Security Standard*. https://www.pcisecuritystandards.org/document_library/
+- [DORA, 2022] European Parliament. (2022). *Regulation (EU) 2022/2554 — Digital Operational Resilience Act (DORA)*. Official Journal of the European Union. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2554
+- [Streamlit, 2019] Streamlit Inc. (2019). *Streamlit — The fastest way to build data apps*. https://streamlit.io
+- [Plotly, 2015] Plotly Technologies Inc. (2015). *Collaborative data science*. Montréal, QC: Plotly Technologies Inc. https://plot.ly
+- [McKinney, 2010] McKinney, W. (2010). Data Structures for Statistical Computing in Python. *Proceedings of the 9th Python in Science Conference (SciPy)*, 51–56.
+- [FCA, 2021] Financial Conduct Authority. (2021). *Operational Resilience — PS21/3: Building operational resilience*. https://www.fca.org.uk/publications/policy-statements/ps21-3-building-operational-resilience
+- [MITRE ATT&CK, 2023] MITRE Corporation. (2023). *MITRE ATT&CK® Framework — Enterprise Matrix*. https://attack.mitre.org/

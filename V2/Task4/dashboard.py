@@ -10,6 +10,17 @@ domain pages.
 Usage:
     cd Task4 && streamlit run dashboard.py
     Then open: http://localhost:8501
+
+Key References:
+    Streamlit Inc. (2019) — Streamlit — The fastest way to build data apps. https://streamlit.io
+    Vielberth et al. (2020) — SIEM survey. IEEE Access, 8, 143812–143836.
+        https://doi.org/10.1109/ACCESS.2020.3012196
+    Plotly Technologies Inc. (2015) — Collaborative data science. https://plot.ly
+    McKinney, W. (2010) — Data Structures for Statistical Computing in Python.
+        Proceedings of the 9th Python in Science Conference (SciPy), 51–56.
+    ISO/IEC 27001:2022 — Information Security Management. https://www.iso.org/standard/82875.html
+    PCI-DSS v4.0 — Payment Card Industry Data Security Standard.
+        https://www.pcisecuritystandards.org/document_library/
 """
 
 # ── Standard library ──────────────────────────────────────────────────────────
